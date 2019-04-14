@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import *
+from . import models
 # Register your models here.
-admin.register(Contact)
-admin.register(CustomerCompany)
-admin.register(LoanType)
-admin.register(Lead)
+admin.site.register(models.Contact)
+admin.site.register(models.CustomerCompany)
+admin.site.register(models.LoanType)
+admin.site.register(models.Lead)
